@@ -33,7 +33,7 @@ test('Validate store names based on store numbers', () => {
     'store3': 'Central Market',
     'store4': 'Westside Outlet'
   };
-
+  const store = dataMethods.getStoreNumber(storeName)
   expect(storeName).toBe(storeMapping[store]);
   
 });
