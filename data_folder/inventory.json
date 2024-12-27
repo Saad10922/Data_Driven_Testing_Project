@@ -1,0 +1,138 @@
+{
+    "store1": {
+      "storeId": "S001",
+      "storeName": "Downtown Plaza",
+      "brands": [
+        {
+          "brandName": "ElectroMax",
+          "products": [
+            { "productId": "P001", "productName": "Smartphone X", "price": 799.99 },
+            { "productId": "P002", "productName": "Laptop Pro", "price": 1199.99 }
+          ],
+          "locations": [
+            { "locationId": "L001", "address": "101 Main Street", "zipCode": "12345" }
+          ],
+          "staff": [
+            { "staffId": "E001", "name": "John Doe", "position": "Manager" },
+            { "staffId": "E002", "name": "Jane Smith", "position": "Sales" }
+          ]
+        },
+        {
+          "brandName": "HomeEssentials",
+          "products": [
+            { "productId": "P003", "productName": "Vacuum Cleaner", "price": 299.99 },
+            { "productId": "P004", "productName": "Microwave Oven", "price": 199.99 }
+          ],
+          "locations": [
+            { "locationId": "L002", "address": "202 Maple Avenue", "zipCode": "54321" }
+          ],
+          "staff": [
+            { "staffId": "E003", "name": "Alice Brown", "position": "Supervisor" },
+            { "staffId": "E004", "name": "Bob White", "position": "Technician" }
+          ]
+        }
+      ]
+    },
+    "store2": {
+      "storeId": "S002",
+      "storeName": "Uptown Mall",
+      "brands": [
+        {
+          "brandName": "FashionHub",
+          "products": [
+            { "productId": "P005", "productName": "Designer Jacket", "price": 149.99 },
+            { "productId": "P006", "productName": "Sneakers", "price": 89.99 }
+          ],
+          "locations": [
+            { "locationId": "L003", "address": "303 High Street", "zipCode": "67890" }
+          ],
+          "staff": [
+            { "staffId": "E005", "name": "Charles Grey", "position": "Manager" },
+            { "staffId": "E006", "name": "Diana Prince", "position": "Sales" }
+          ]
+        },
+        {
+          "brandName": "TechGear",
+          "products": [
+            { "productId": "P007", "productName": "Gaming Console", "price": 499.99 },
+            { "productId": "P008", "productName": "Wireless Headphones", "price": 199.99 }
+          ],
+          "locations": [
+            { "locationId": "L004", "address": "404 Elm Street", "zipCode": "09876" }
+          ],
+          "staff": [
+            { "staffId": "E007", "name": "Edward Green", "position": "Technician" },
+            { "staffId": "E008", "name": "Fiona Black", "position": "Customer Support" }
+          ]
+        }
+      ]
+    },
+    "store3": {
+      "storeId": "S003",
+      "storeName": "Central Market",
+      "brands": [
+        {
+          "brandName": "FreshFarms",
+          "products": [
+            { "productId": "P009", "productName": "Organic Apples", "price": 3.99 },
+            { "productId": "P010", "productName": "Free-range Eggs", "price": 4.99 }
+          ],
+          "locations": [
+            { "locationId": "L005", "address": "505 Walnut Street", "zipCode": "11223" }
+          ],
+          "staff": [
+            { "staffId": "E009", "name": "George Blue", "position": "Manager" },
+            { "staffId": "E010", "name": "Hannah Violet", "position": "Cashier" }
+          ]
+        },
+        {
+          "brandName": "GreenWorld",
+          "products": [
+            { "productId": "P011", "productName": "Plant-Based Milk", "price": 5.49 },
+            { "productId": "P012", "productName": "Vegan Cheese", "price": 6.99 }
+          ],
+          "locations": [
+            { "locationId": "L006", "address": "606 Cedar Avenue", "zipCode": "33445" }
+          ],
+          "staff": [
+            { "staffId": "E011", "name": "Isaac Indigo", "position": "Sales" },
+            { "staffId": "E012", "name": "Julia Amber", "position": "Stock Manager" }
+          ]
+        }
+      ]
+    },
+    "store4": {
+      "storeId": "S004",
+      "storeName": "Westside Outlet",
+      "brands": [
+        {
+          "brandName": "AutoPro",
+          "products": [
+            { "productId": "P013", "productName": "Car Battery", "price": 129.99 },
+            { "productId": "P014", "productName": "Tire Set", "price": 299.99 }
+          ],
+          "locations": [
+            { "locationId": "L007", "address": "707 Birch Road", "zipCode": "55667" }
+          ],
+          "staff": [
+            { "staffId": "E013", "name": "Kevin Teal", "position": "Technician" },
+            { "staffId": "E014", "name": "Laura Maroon", "position": "Customer Support" }
+          ]
+        },
+        {
+          "brandName": "SpeedySports",
+          "products": [
+            { "productId": "P015", "productName": "Running Shoes", "price": 89.99 },
+            { "productId": "P016", "productName": "Sports Jacket", "price": 119.99 }
+          ],
+          "locations": [
+            { "locationId": "L008", "address": "808 Pine Lane", "zipCode": "77889" }
+          ],
+          "staff": [
+            { "staffId": "E015", "name": "Michael Olive", "position": "Manager" },
+            { "staffId": "E016", "name": "Nina Coral", "position": "Sales" }
+          ]
+        }
+      ]
+    }
+  }
