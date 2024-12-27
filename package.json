@@ -2,6 +2,7 @@
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.14",
+    "cross-env": "^7.0.3",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5"
   },
@@ -10,21 +11,22 @@
     "ts-node": "^10.9.2"
   },
   "scripts": {
-    "jest:ElectroMax-DowntownPlaza-P001": "powershell -Command \"$env:BRAND_NAME='ElectroMax'; $env:STORE_NAME='Downtown Plaza'; $env:PRODUCT_ID='P001'; jest\"",        
-    "jest:ElectroMax-DowntownPlaza-P002": "powershell -Command \"$env:BRAND_NAME='ElectroMax'; $env:STORE_NAME='Downtown Plaza'; $env:PRODUCT_ID='P002'; jest\"",        
-    "jest:HomeEssentials-DowntownPlaza-P003": "powershell -Command \"$env:BRAND_NAME='HomeEssentials'; $env:STORE_NAME='Downtown Plaza'; $env:PRODUCT_ID='P003'; jest\"",
-    "jest:HomeEssentials-DowntownPlaza-P004": "powershell -Command \"$env:BRAND_NAME='HomeEssentials'; $env:STORE_NAME='Downtown Plaza'; $env:PRODUCT_ID='P004'; jest\"",
-    "jest:FashionHub-UptownMall-P005": "powershell -Command \"$env:BRAND_NAME='FashionHub'; $env:STORE_NAME='Uptown Mall'; $env:PRODUCT_ID='P005'; jest\"",
-    "jest:FashionHub-UptownMall-P006": "powershell -Command \"$env:BRAND_NAME='FashionHub'; $env:STORE_NAME='Uptown Mall'; $env:PRODUCT_ID='P006'; jest\"",
-    "jest:TechGear-UptownMall-P007": "powershell -Command \"$env:BRAND_NAME='TechGear'; $env:STORE_NAME='Uptown Mall'; $env:PRODUCT_ID='P007'; jest\"",
-    "jest:TechGear-UptownMall-P008": "powershell -Command \"$env:BRAND_NAME='TechGear'; $env:STORE_NAME='Uptown Mall'; $env:PRODUCT_ID='P008'; jest\"",
-    "jest:FreshFarms-CentralMarket-P009": "powershell -Command \"$env:BRAND_NAME='FreshFarms'; $env:STORE_NAME='Central Market'; $env:PRODUCT_ID='P009'; jest\"",        
-    "jest:FreshFarms-CentralMarket-P010": "powershell -Command \"$env:BRAND_NAME='FreshFarms'; $env:STORE_NAME='Central Market'; $env:PRODUCT_ID='P010'; jest\"",        
-    "jest:GreenWorld-CentralMarket-P011": "powershell -Command \"$env:BRAND_NAME='GreenWorld'; $env:STORE_NAME='Central Market'; $env:PRODUCT_ID='P011'; jest\"",
-    "jest:GreenWorld-CentralMarket-P012": "powershell -Command \"$env:BRAND_NAME='GreenWorld'; $env:STORE_NAME='Central Market'; $env:PRODUCT_ID='P012'; jest\"",
-    "jest:AutoPro-WestsideOutlet-P013": "powershell -Command \"$env:BRAND_NAME='AutoPro'; $env:STORE_NAME='Westside Outlet'; $env:PRODUCT_ID='P013'; jest\"",
-    "jest:AutoPro-WestsideOutlet-P014": "powershell -Command \"$env:BRAND_NAME='AutoPro'; $env:STORE_NAME='Westside Outlet'; $env:PRODUCT_ID='P014'; jest\"",
-    "jest:SpeedySports-WestsideOutlet-P015": "powershell -Command \"$env:BRAND_NAME='SpeedySports'; $env:STORE_NAME='Westside Outlet'; $env:PRODUCT_ID='P015'; jest\"",
-    "jest:SpeedySports-WestsideOutlet-P016": "powershell -Command \"$env:BRAND_NAME='SpeedySports'; $env:STORE_NAME='Westside Outlet'; $env:PRODUCT_ID='P016'; jest\""
-  }
+  "jest:ElectroMax-DowntownPlaza-P001": "cross-env BRAND_NAME='ElectroMax' STORE_NAME=\"Downtown Plaza\" PRODUCT_ID='P001' jest",
+  "jest:ElectroMax-DowntownPlaza-P002": "cross-env BRAND_NAME='ElectroMax' STORE_NAME=\"Downtown Plaza\" PRODUCT_ID='P002' jest",
+  "jest:HomeEssentials-DowntownPlaza-P003": "cross-env BRAND_NAME='HomeEssentials' STORE_NAME=\"Downtown Plaza\" PRODUCT_ID='P003' jest",
+  "jest:HomeEssentials-DowntownPlaza-P004": "cross-env BRAND_NAME='HomeEssentials' STORE_NAME=\"Downtown Plaza\" PRODUCT_ID='P004' jest",
+  "jest:FashionHub-UptownMall-P005": "cross-env BRAND_NAME='FashionHub' STORE_NAME=\"UptownMall\" PRODUCT_ID='P005' jest",
+  "jest:FashionHub-UptownMall-P006": "cross-env BRAND_NAME='FashionHub' STORE_NAME=\"UptownMall\" PRODUCT_ID='P006' jest",
+  "jest:TechGear-UptownMall-P007": "cross-env BRAND_NAME='TechGear' STORE_NAME=\"UptownMall\" PRODUCT_ID='P007' jest",
+  "jest:TechGear-UptownMall-P008": "cross-env BRAND_NAME='TechGear' STORE_NAME=\"UptownMall\" PRODUCT_ID='P008' jest",
+  "jest:FreshFarms-CentralMarket-P009": "cross-env BRAND_NAME='FreshFarms' STORE_NAME=\"CentralMarket\" PRODUCT_ID='P009' jest",
+  "jest:FreshFarms-CentralMarket-P010": "cross-env BRAND_NAME='FreshFarms' STORE_NAME=\"CentralMarket\" PRODUCT_ID='P010' jest",
+  "jest:GreenWorld-CentralMarket-P011": "cross-env BRAND_NAME='GreenWorld' STORE_NAME=\"CentralMarket\" PRODUCT_ID='P011' jest",
+  "jest:GreenWorld-CentralMarket-P012": "cross-env BRAND_NAME='GreenWorld' STORE_NAME=\"CentralMarket\" PRODUCT_ID='P012' jest",
+  "jest:AutoPro-WestsideOutlet-P013": "cross-env BRAND_NAME='AutoPro' STORE_NAME=\"WestsideOutlet\" PRODUCT_ID='P013' jest",
+  "jest:AutoPro-WestsideOutlet-P014": "cross-env BRAND_NAME='AutoPro' STORE_NAME=\"WestsideOutlet\" PRODUCT_ID='P014' jest",
+  "jest:SpeedySports-WestsideOutlet-P015": "cross-env BRAND_NAME='SpeedySports' STORE_NAME=\"WestsideOutlet\" PRODUCT_ID='P015' jest",
+  "jest:SpeedySports-WestsideOutlet-P016": "cross-env BRAND_NAME='SpeedySports' STORE_NAME=\"WestsideOutlet\" PRODUCT_ID='P016' jest"
+}
+
 }
