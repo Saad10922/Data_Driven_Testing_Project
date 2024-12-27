@@ -1,0 +1,44 @@
+name: Data-Driven Testing
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ] 
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16] 
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: |
+        npm run jest:ElectroMax-DowntownPlaza-P001
+        npm run jest:ElectroMax-DowntownPlaza-P002
+        npm run jest:HomeEssentials-DowntownPlaza-P003
+        npm run jest:HomeEssentials-DowntownPlaza-P004
+        npm run jest:FashionHub-UptownMall-P005
+        npm run jest:FashionHub-UptownMall-P006
+        npm run jest:TechGear-UptownMall-P007
+        npm run jest:TechGear-UptownMall-P008
+        npm run jest:FreshFarms-CentralMarket-P009
+        npm run jest:FreshFarms-CentralMarket-P010
+        npm run jest:GreenWorld-CentralMarket-P011
+        npm run jest:GreenWorld-CentralMarket-P012
+        npm run jest:AutoPro-WestsideOutlet-P013
+        npm run jest:AutoPro-WestsideOutlet-P014
+        npm run jest:SpeedySports-WestsideOutlet-P015
+        npm run jest:SpeedySports-WestsideOutlet-P016
